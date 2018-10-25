@@ -120,7 +120,6 @@ class EmployeeController extends Controller
 			'state' => 'required',
 			'city' => 'required',
 			'country' => 'required',
-			'full_time' => 'required|bool',
 		]);
 
     $employee->first_name = $request->first_name;
@@ -134,7 +133,6 @@ class EmployeeController extends Controller
 		$employee->state = $request->state;
 		$employee->city = $request->city;
 		$employee->country = $request->country;
-		$employee->full_time = $request->full_time;
 		$employee->save();
 
 		$request->session()->flash('status', 'New Employee created');
