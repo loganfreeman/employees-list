@@ -11,7 +11,7 @@ class Employee extends Model
 
 	protected $dates=['deleted_at'];
 
-	protected $fillable=['slug','email','full_time', 'first_name', 'last_name', 'employee_id', 'salary','phone',
+	protected $fillable=['slug','email', 'first_name', 'last_name', 'employee_id', 'salary','phone',
 		'street','state','city','country'];
 
 }
