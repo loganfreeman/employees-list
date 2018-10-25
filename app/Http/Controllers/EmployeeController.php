@@ -53,7 +53,6 @@ class EmployeeController extends Controller
 			'state' => 'required',
 			'city' => 'required',
 			'country' => 'required',
-			'full_time' => 'required|bool',
 		]);
 
 		$employee = Employee::create([
@@ -68,8 +67,6 @@ class EmployeeController extends Controller
 			'state' => $request->state,
 			'city' => $request->city,
 			'country' => $request->country,
-			'full_time' => $request->full_time,
-			'role_id' => $request->role_id,
 		]);
 
 
