@@ -22,7 +22,6 @@ class CreateEmployeesTable extends Migration
       $table->string('salary');
 			$table->string('slug');
 			$table->string('email');
-			$table->boolean('full_time')->default(1);
 			$table->string('street')->nullable();
       $table->string('city')->nullable();
       $table->string('state')->nullable();
