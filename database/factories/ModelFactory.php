@@ -30,6 +30,5 @@ $factory->define(App\Employee::class, function (Faker $faker) {
 		'state' => $faker->state,
 		'city' => $faker->city,
 		'country' => $faker->country,
-		'full_time' => $faker->randomElement($array = array ('1','0')),
     ];
 });
